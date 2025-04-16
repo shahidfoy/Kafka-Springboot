@@ -1,9 +1,7 @@
-=====================================
 Setting up and running Kafka
 =====================================
 
 # setup kafka
-=====================================
 Setup Kafka using Windows wsl with Ubuntu.
 
 ### Windows Powershell
@@ -33,9 +31,7 @@ tar -xvf ../kafka_2.13-3.9.0.tgz
 cd kafka_2.13-3.9.0
 ```
 
-=====================================
 # start kafka
-=====================================
 Set up and configure kafka cluster id then start up kafka.
 
 ### Ubuntu
@@ -51,9 +47,8 @@ bin/kafka-storage.sh format -t $KAFKA_CLUSTER_ID -c config/kraft/server.properti
 bin/kafka-server-start.sh config/kraft/server.properties
 ```
 
-=====================================
+
 # kafka sending and receiving
-=====================================
 Send and receive messages in kafka by using the following.
 
 Open three terminals 
@@ -80,9 +75,8 @@ bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic my.first
 
 you should see the message show up in the consumer
 
-=====================================
+
 # kafka tools
-=====================================
 
 example of using helpon the bin shell files
 ```bash
@@ -96,7 +90,6 @@ bin/kafka-server-stop.sh
 ```
 
 # kafka topic tools
-=====================================
 
 topic cli tool
 
@@ -119,7 +112,6 @@ bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic my.new.to
 
 
 # kafka consumer group tools
-=====================================
 
 ```bash
 # set up topic
